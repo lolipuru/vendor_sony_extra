@@ -1,0 +1,143 @@
+soong_namespace {
+}
+
+dex_import {
+	name: "com.sony.device",
+	owner: "sony",
+	jars: ["overlay/system/framework/com.sony.device.jar"],
+}
+
+dex_import {
+	name: "com.sonymobile.home.resourceprovider",
+	owner: "sony",
+	jars: ["overlay/system/framework/com.sonymobile.home.resourceprovider.jar"],
+}
+
+dex_import {
+	name: "somc-ext-mmwdiapi",
+	owner: "sony",
+	jars: ["overlay/system/framework/somc-ext-mmwdiapi.jar"],
+}
+
+dex_import {
+	name: "com.sonyericsson.idd_impl",
+	owner: "sony",
+	jars: ["overlay/product/framework/com.sonyericsson.idd_impl.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.google.protobuf-2.3.0",
+	owner: "sony",
+	jars: ["overlay/product/framework/com.google.protobuf-2.3.0.jar"],
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SomcColorGamut",
+	owner: "sony",
+	apk: "overlay/system/priv-app/SomcColorGamut/SomcColorGamut.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "SomcPhotoPro",
+	owner: "sony",
+	apk: "overlay/product/priv-app/SomcPhotoPro/SomcPhotoPro.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SonyMusic",
+	owner: "sony",
+	apk: "overlay/product/priv-app/SonyMusic/SonyMusic.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CameraAddonPermission",
+	owner: "sony",
+	apk: "overlay/product/app/CameraAddonPermission/CameraAddonPermission.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CameraCommonPermission",
+	owner: "sony",
+	apk: "overlay/product/app/CameraCommonPermission/CameraCommonPermission.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SomcCinemaPro",
+	owner: "sony",
+	apk: "overlay/product/app/SomcCinemaPro/SomcCinemaPro.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "PortraitSelfie",
+	owner: "sony",
+	apk: "overlay/product/priv-app/PortraitSelfie/PortraitSelfie.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "ArtFilterCamera",
+	owner: "sony",
+	apk: "overlay/product/priv-app/ArtFilterCamera/ArtFilterCamera.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "CameraPanorama",
+	owner: "sony",
+	apk: "overlay/product/priv-app/CameraPanorama/CameraPanorama.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "SomcMovieCreator",
+	owner: "sony",
+	apk: "overlay/product/priv-app/SomcMovieCreator/SomcMovieCreator.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
