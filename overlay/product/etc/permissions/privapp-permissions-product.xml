@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- for the partition: /product -->
 <permissions>
-    <privapp-permissions package="com.sonymobile.addoncamera.portraitselfie">
-        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.sonymobile.extmonitorapp">
         <permission name="android.permission.MANAGE_USB"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
@@ -17,7 +13,6 @@
 
     <privapp-permissions package="com.sonymobile.photopro">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="com.sonymobile.permission.SECURE_DATA_MANAGER"/>
     </privapp-permissions>
-
+    
 </permissions>

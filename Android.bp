@@ -10,7 +10,8 @@ dex_import {
 dex_import {
 	name: "com.sonymobile.home.resourceprovider",
 	owner: "sony",
-	jars: ["overlay/system/framework/com.sonymobile.home.resourceprovider.jar"],
+	jars: ["overlay/product/framework/com.sonymobile.home.resourceprovider.jar"],
+	product_specific: true,
 }
 
 dex_import {
@@ -27,20 +28,10 @@ dex_import {
 }
 
 dex_import {
-	name: "com.google.protobuf-2.3.0",
+	name: "com.google.protobuf-2.3.0-dummy",
 	owner: "sony",
-	jars: ["overlay/product/framework/com.google.protobuf-2.3.0.jar"],
+	jars: ["overlay/product/framework/com.google.protobuf-2.3.0-dummy.jar"],
 	product_specific: true,
-}
-
-android_app_import {
-	name: "SomcColorGamut",
-	owner: "sony",
-	apk: "overlay/system/priv-app/SomcColorGamut/SomcColorGamut.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
 }
 
 android_app_import {
@@ -99,9 +90,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PortraitSelfie",
+	name: "SomcVideoPro",
 	owner: "sony",
-	apk: "overlay/product/priv-app/PortraitSelfie/PortraitSelfie.apk",
+	apk: "overlay/product/app/SomcVideoPro/SomcVideoPro.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
